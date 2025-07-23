@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="21008000">
+<Project Type="Project" LVVersion="24008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -146,7 +146,6 @@
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Difference.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Difference.vim"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
@@ -154,6 +153,7 @@
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
@@ -161,12 +161,15 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="nidcpower_32.dll" Type="Document" URL="nidcpower_32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="nidcpower_64.dll" Type="Document" URL="nidcpower_64.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Single Point_Channel Ganging_PMIC" Type="EXE">
+			<Item Name="Single Point_Channel Ganging_PMIC - Full Config" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{DBD160A4-EF7C-4A78-A7E6-4DF384C99D85}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{31C60CFA-5831-498E-91FD-4703F73D1EBE}</Property>
@@ -174,26 +177,26 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{FDD3CABD-8062-4B3A-960F-DC865D10A07E}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Single Point_Channel Ganging_PMIC</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Single Point_Channel Ganging_PMIC - Full Config</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/pmic-labview/builds/Single Point_Channel Ganging_PMIC</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/pmic-labview/builds/Single Point_Channel Ganging_PMIC - Full Config</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Single Point_Channel Ganging.lvlib/Advanced/Build Assets/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7D3A3C8D-38EA-41FC-BC58-D3C8FFFC1C22}</Property>
 				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Single Point_Channel Ganging_PMIC.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/pmic-labview/builds/Single Point_Channel Ganging_PMIC/Single Point_Channel Ganging_PMIC.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/pmic-labview/builds/Single Point_Channel Ganging_PMIC - Full Config/Single Point_Channel Ganging_PMIC.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/pmic-labview/builds/Single Point_Channel Ganging_PMIC/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/pmic-labview/builds/Single Point_Channel Ganging_PMIC - Full Config/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2B88D3D4-6BD1-4B1B-B937-5D53A61A858A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5FA94D26-CA4C-4B31-951E-35AB154E701E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Single Point_Channel Ganging.lvlib/Get Measurement Details.vi</Property>
@@ -231,10 +234,10 @@
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">9</Property>
 				<Property Name="TgtF_fastFileFormat" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Single Point_Channel Ganging_PMIC</Property>
-				<Property Name="TgtF_internalName" Type="Str">Single Point_Channel Ganging_PMIC</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Single Point_Channel Ganging_PMIC - Full Config</Property>
+				<Property Name="TgtF_internalName" Type="Str">Single Point_Channel Ganging_PMIC - Full Config</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024</Property>
-				<Property Name="TgtF_productName" Type="Str">Single Point_Channel Ganging_PMIC</Property>
+				<Property Name="TgtF_productName" Type="Str">Single Point_Channel Ganging_PMIC - Full Config</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{D2DDC758-FBFC-4741-B5B2-BFB083CFAAB6}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Single Point_Channel Ganging_PMIC.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>

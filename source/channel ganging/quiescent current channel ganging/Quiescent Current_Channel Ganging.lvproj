@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="21008000">
+<Project Type="Project" LVVersion="24008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -185,7 +185,6 @@
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Difference.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Difference.vim"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
@@ -196,6 +195,7 @@
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 			</Item>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -207,9 +207,12 @@
 			<Item Name="niScope_64.dll" Type="Document" URL="niScope_64.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nidcpower_32.dll" Type="Document" URL="nidcpower_32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Q Current_Ch Ganging" Type="EXE">
+			<Item Name="Q Current_Ch Ganging - Full Config" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{AF298390-70AC-4765-AE41-A2317B8B347E}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{8CE82905-EA00-49F0-B5EA-985320B4222E}</Property>
@@ -217,26 +220,26 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{950A3A0B-27D6-4717-8D4F-3313408EC746}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Q Current_Ch Ganging</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Q Current_Ch Ganging - Full Config</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/pmic-labview/builds/Q Current_Ch Ganging</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/pmic-labview/builds/Q Current_Ch Ganging - Full Config</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Quiescent Current_Channel Ganging.lvlib/Advanced/Build Assets/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A2E628F3-61C5-44EF-A808-508C0B66B48A}</Property>
 				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Q Current_Ch Ganging.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/pmic-labview/builds/Q Current_Ch Ganging/Q Current_Ch Ganging.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/pmic-labview/builds/Q Current_Ch Ganging - Full Config/Q Current_Ch Ganging.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/pmic-labview/builds/Q Current_Ch Ganging/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/pmic-labview/builds/Q Current_Ch Ganging - Full Config/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C37F92F9-3475-4BBA-848D-6D3F7C94BAE8}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CA48E231-5211-4F11-B1CF-599CFE4EA324}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Quiescent Current_Channel Ganging.lvlib/Run Service.vi</Property>
@@ -267,10 +270,10 @@
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">8</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Q Current_Ch Ganging</Property>
-				<Property Name="TgtF_internalName" Type="Str">Q Current_Ch Ganging</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Q Current_Ch Ganging - Full Config</Property>
+				<Property Name="TgtF_internalName" Type="Str">Q Current_Ch Ganging - Full Config</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 </Property>
-				<Property Name="TgtF_productName" Type="Str">Q Current_Ch Ganging</Property>
+				<Property Name="TgtF_productName" Type="Str">Q Current_Ch Ganging - Full Config</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{96D9CB9D-B4F9-48DA-83E1-B7E76B70857C}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Q Current_Ch Ganging.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
